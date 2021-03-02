@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>nkast.Aether.Shaders</RootNamespace>
+    <AssemblyName>Aether.Shaders.Lighting</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>..\..\Artifacts\$(Configuration)\Libraries\netstandard2.0\</OutputPath>
+    <BaseIntermediateOutputPath>obj\netstandard2.0\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>TRACE;DEBUG;WINDOWS MG</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE;WINDOWS MG</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="DepthMapEffect.cs" />
+    <Compile Include="LightingEffect.cs" />
+    <Compile Include="EffectHelpers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\Common.fxh" />
+    <None Include="Shaders\DepthMapEffect.fx" />
+    <None Include="Shaders\LightingEffect.fx" />
+    <None Include="Shaders\Lighting.fxh" />
+    <None Include="Shaders\Macros.fxh" />
+    <None Include="Shaders\Structures.fxh" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\LightingEffect.dx11.fxo.10" />
+    <EmbeddedResource Include="Resources\LightingEffect.ogl.fxo.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.Portable.9000" Version="3.8.9101">
+      <PrivateAssets>all</PrivateAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
