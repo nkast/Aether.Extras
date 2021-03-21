@@ -56,4 +56,7 @@
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>$(ProjectDir)Shaders\BuildShaders.bat</PreBuildEvent>
+  </PropertyGroup>
 </Project>
