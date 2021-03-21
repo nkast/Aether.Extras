@@ -8,12 +8,12 @@ SET XNAFX="..\..\Tools\CompileEffect\CompileEffect.exe"
 
 @echo Build dx11
 @for /f %%f IN ('dir /b *.fx') do (
-    call %MGFX% %%~nf.fx ..\Resources\%%~nf.dx11.fxo /Platform:Windows
+    call %MGFX% %%~nf.fx ..\Resources\%%~nf.dx11.fxo.10 /Platform:Windows
 )
 
 @echo Build ogl
 @for /f %%f IN ('dir /b *.fx') do (
-    call %MGFX% %%~nf.fx ..\Resources\%%~nf.ogl.fxo /Platform:DesktopGL
+    call %MGFX% %%~nf.fx ..\Resources\%%~nf.ogl.fxo.10 /Platform:DesktopGL
 )
 
 @echo Build dx9/xna Reach
