@@ -1,6 +1,6 @@
 
 #define FXAA_PC 1
-#ifdef SM4 // shader model 4.0 (DX11)
+#ifdef __DIRECTX__ // shader model 4.0 (DX11)
 #define FXAA_HLSL_4_MG 1
 #else
 #define FXAA_HLSL_3 1
@@ -56,7 +56,7 @@ VSOutput VertexShaderFunction(float4 position	: POSITION0,
 float4 PixelShaderFunction_FXAA(VSOutput input) : SV_Target0
 {
 	FxaaTex tex;
-#ifdef SM4 // shader model 4.0 (DX11)
+#ifdef __DIRECTX__ // shader model 4.0 (DX11)
 	tex.tex = Texture;
 	tex.smpl = TextureSampler;
 #else
@@ -96,7 +96,7 @@ technique FXAA
 {
     pass 
     {
-#ifdef SM4 // shader model 4.0 (DX11)
+#ifdef __DIRECTX__ // shader model 4.0 (DX11)
         VertexShader = compile vs_4_0 VertexShaderFunction();
         PixelShader = compile ps_4_0 PixelShaderFunction_FXAA();
 #else

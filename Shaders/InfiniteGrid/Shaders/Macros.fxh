@@ -25,7 +25,7 @@
 #define SAMPLE_CUBEMAP(Name, texCoord)  texCUBE(Name##Sampler, texCoord)
 
 
-#ifdef SM4  // Macros for targetting HLSL 4.0
+#ifdef __DIRECTX__  // Macros for targetting HLSL 4.0
 
 
 #define BEGIN_CONSTANTS     cbuffer Parameters : register(b0) {

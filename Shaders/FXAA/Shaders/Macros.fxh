@@ -10,7 +10,7 @@
 	technique name { pass { VertexShader = compile vs_2_0 vsname (); PixelShader = compile ps_2_0 psname(); } }
 
 
-#ifdef SM4  // Macros for targetting HLSL 4.0
+#ifdef __DIRECTX__  // Macros for targetting HLSL 4.0
 
 
 #define DECLARE_TEXTURE(Name, index) \
@@ -43,7 +43,7 @@
 #endif
 
 
-#ifdef SM4  // Macros for targetting HLSL 4.0
+#ifdef __DIRECTX__  // Macros for targetting HLSL 4.0
 
 
 #define BEGIN_CONSTANTS     cbuffer Parameters : register(b0) {
