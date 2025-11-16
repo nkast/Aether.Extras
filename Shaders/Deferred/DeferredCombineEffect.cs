@@ -62,27 +62,33 @@ namespace nkast.Aether.Shaders
                     platformName = ".dx11.fxo";
                     break;
                 case GraphicsBackend.OpenGL:
-                case GraphicsBackend.GLES:
-                case GraphicsBackend.WebGL:
                     platformName = ".ogl.fxo";
                     break;
+                case GraphicsBackend.GLES:
+                case GraphicsBackend.WebGL:
+                    platformName = ".gles.fxo";
+                    break;
                 default:
-                    throw new NotSupportedException("platform");
+                    throw new NotSupportedException("Backend");
             }
 
             // Detect version
             version = ".10";
             Version kniVersion = typeof(Effect).Assembly.GetName().Version;
-            if (kniVersion.Major == 3)
             {
-                if (kniVersion.Minor == 9)
-                {
+                if (kniVersion.Minor ==  9
+                ||  kniVersion.Minor == 10
+                ||  kniVersion.Minor == 11
+                ||  kniVersion.Minor == 12
+                ||  kniVersion.Minor == 13
+                ||  kniVersion.Minor == 14)
                     version = ".10";
-                }
-                if (kniVersion.Minor == 10)
-                {
+            }
+            if (kniVersion.Major == 4)
+            {
+                if (kniVersion.Minor == 0
+                ||  kniVersion.Minor == 1)
                     version = ".10";
-                }
             }
 #endif
 

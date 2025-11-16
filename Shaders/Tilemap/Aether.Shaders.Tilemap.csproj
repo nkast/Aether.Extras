@@ -28,6 +28,7 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\TilemapEffect.dx11.fxo.10" />
+    <EmbeddedResource Include="Resources\TilemapEffect.gles.fxo.10" />
     <EmbeddedResource Include="Resources\TilemapEffect.ogl.fxo.10" />
   </ItemGroup>
   <ItemGroup>

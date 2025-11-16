@@ -37,6 +37,9 @@
     <EmbeddedResource Include="Resources\FXAAGreenLumaHigh.dx11.fxo.10" />
     <EmbeddedResource Include="Resources\FXAAGreenLumaLow.dx11.fxo.10" />
     <EmbeddedResource Include="Resources\FXAAGreenLumaMedium.dx11.fxo.10" />
+    <EmbeddedResource Include="Resources\FXAAGreenLumaHigh.gles.fxo.10" />
+    <EmbeddedResource Include="Resources\FXAAGreenLumaLow.gles.fxo.10" />
+    <EmbeddedResource Include="Resources\FXAAGreenLumaMedium.gles.fxo.10" />
     <EmbeddedResource Include="Resources\FXAAGreenLumaHigh.ogl.fxo.10" />
     <EmbeddedResource Include="Resources\FXAAGreenLumaLow.ogl.fxo.10" />
     <EmbeddedResource Include="Resources\FXAAGreenLumaMedium.ogl.fxo.10" />

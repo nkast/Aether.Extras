@@ -23,6 +23,14 @@ SET XNAFX="..\..\Tools\CompileEffect\CompileEffect.exe"
 )
 
 @echo .
+@echo Build gles
+@for /f %%f IN ('dir /b *.fx') do (
+    @echo .
+    @echo Compile %%~nf
+    call %MGFX% %%~nf.fx ..\Resources\%%~nf.gles.fxo /Platform:Android
+)
+
+@echo .
 @echo Build dx9/xna Reach
 @for /f %%f IN ('dir /b *.Reach.fx') do (
     @echo .
