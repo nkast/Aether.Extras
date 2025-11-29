@@ -34,11 +34,17 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\InfiniteGridEffect.HiDef.dx11.fxo.10" />
+    <EmbeddedResource Include="Resources\InfiniteGridEffect.HiDef.dx11.fxo.11" />
     <EmbeddedResource Include="Resources\InfiniteGridEffect.Reach.dx11.fxo.10" />
+    <EmbeddedResource Include="Resources\InfiniteGridEffect.Reach.dx11.fxo.11" />
     <EmbeddedResource Include="Resources\InfiniteGridEffect.HiDef.gles.fxo.10" />
+    <EmbeddedResource Include="Resources\InfiniteGridEffect.HiDef.gles.fxo.11" />
     <EmbeddedResource Include="Resources\InfiniteGridEffect.Reach.gles.fxo.10" />
+    <EmbeddedResource Include="Resources\InfiniteGridEffect.Reach.gles.fxo.11" />
     <EmbeddedResource Include="Resources\InfiniteGridEffect.HiDef.ogl.fxo.10" />
+    <EmbeddedResource Include="Resources\InfiniteGridEffect.HiDef.ogl.fxo.11" />
     <EmbeddedResource Include="Resources\InfiniteGridEffect.Reach.ogl.fxo.10" />
+    <EmbeddedResource Include="Resources\InfiniteGridEffect.Reach.ogl.fxo.11" />
   </ItemGroup>
 
   <ItemGroup>
