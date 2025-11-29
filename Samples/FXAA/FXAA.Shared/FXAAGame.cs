@@ -15,7 +15,7 @@ namespace Samples.FXAA
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
-            graphics.GraphicsProfile = GraphicsProfile.HiDef;
+            graphics.GraphicsProfile = GraphicsProfile.FL10_0;
 
             _fxaaSampleComponent = new FXAASampleComponent(this);
             Components.Add(_fxaaSampleComponent);

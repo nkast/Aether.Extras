@@ -99,8 +99,8 @@ technique FXAA
         VertexShader = compile vs_4_0_level_9_1 VertexShaderFunction();
         PixelShader = compile ps_4_0_level_9_3 PixelShaderFunction_FXAA();
 #else
-        VertexShader = compile vs_3_0 VertexShaderFunction();
-        PixelShader = compile ps_3_0 PixelShaderFunction_FXAA();
+        VertexShader = compile vs_2_0 VertexShaderFunction();
+        PixelShader = compile ps_4_0 PixelShaderFunction_FXAA();
 #endif
     }
 }

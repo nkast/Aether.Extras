@@ -41,7 +41,7 @@ namespace Samples.FXAA
 			#if(WINDOWS)
             try
             {
-                if (_graphicsDevice.GraphicsProfile >= GraphicsProfile.HiDef)          
+                if (_graphicsDevice.GraphicsProfile >= GraphicsProfile.FL10_0)          
                 {
                     fxaaGreenLumaMediumEffect = new FXAAGreenLumaMediumEffect(_graphicsDevice);
                     fxaaGreenLumaHighEffect = new FXAAGreenLumaHighEffect(_graphicsDevice);
@@ -84,7 +84,7 @@ namespace Samples.FXAA
                 {
                     fxaaGreenLumaLowEffect.SetDefaultParameters(maxWidth, maxHeight);
                 }
-                if (_graphicsDevice.GraphicsProfile >= GraphicsProfile.HiDef)
+                if (_graphicsDevice.GraphicsProfile >= GraphicsProfile.FL10_0)
                 {
                     fxaaGreenLumaMediumEffect.SetDefaultParameters(maxWidth, maxHeight);
                     fxaaGreenLumaHighEffect.SetDefaultParameters(maxWidth, maxHeight);
