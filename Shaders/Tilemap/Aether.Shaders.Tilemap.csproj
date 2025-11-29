@@ -28,8 +28,11 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\TilemapEffect.dx11.fxo.10" />
+	  <EmbeddedResource Include="Resources\TilemapEffect.dx11.fxo.11" />
     <EmbeddedResource Include="Resources\TilemapEffect.gles.fxo.10" />
+	  <EmbeddedResource Include="Resources\TilemapEffect.gles.fxo.11" />
     <EmbeddedResource Include="Resources\TilemapEffect.ogl.fxo.10" />
+	  <EmbeddedResource Include="Resources\TilemapEffect.ogl.fxo.11" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="nkast.Xna.Framework" Version="4.2.9001" />
