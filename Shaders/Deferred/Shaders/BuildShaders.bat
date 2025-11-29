@@ -3,7 +3,7 @@ setlocal
 
 cd %~dp0
 
-SET MGFX="C:\Program Files (x86)\KNI\v4.1\Tools\KNIFXC.exe"
+SET MGFX="C:\Program Files (x86)\KNI\v4.2\Tools\KNIFXC.exe"
 SET XNAFX="..\..\Tools\CompileEffect\CompileEffect.exe"
 
 @echo Build dx11

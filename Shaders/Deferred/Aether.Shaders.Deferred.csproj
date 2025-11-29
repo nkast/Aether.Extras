@@ -37,20 +37,35 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\DeferredBasicEffect.dx11.fxo.10" />
+    <EmbeddedResource Include="Resources\DeferredBasicEffect.dx11.fxo.11" />
     <EmbeddedResource Include="Resources\DeferredClearGBuffer.dx11.fxo.10" />
+    <EmbeddedResource Include="Resources\DeferredClearGBuffer.dx11.fxo.11" />
     <EmbeddedResource Include="Resources\DeferredCombine.dx11.fxo.10" />
+    <EmbeddedResource Include="Resources\DeferredCombine.dx11.fxo.11" />
     <EmbeddedResource Include="Resources\DeferredPointLight.dx11.fxo.10" />
+    <EmbeddedResource Include="Resources\DeferredPointLight.dx11.fxo.11" />
     <EmbeddedResource Include="Resources\DeferredSpotLight.dx11.fxo.10" />
+    <EmbeddedResource Include="Resources\DeferredSpotLight.dx11.fxo.11" />
     <EmbeddedResource Include="Resources\DeferredBasicEffect.gles.fxo.10" />
+    <EmbeddedResource Include="Resources\DeferredBasicEffect.gles.fxo.11" />
     <EmbeddedResource Include="Resources\DeferredClearGBuffer.gles.fxo.10" />
+    <EmbeddedResource Include="Resources\DeferredClearGBuffer.gles.fxo.11" />
     <EmbeddedResource Include="Resources\DeferredCombine.gles.fxo.10" />
+    <EmbeddedResource Include="Resources\DeferredCombine.gles.fxo.11" />
     <EmbeddedResource Include="Resources\DeferredPointLight.gles.fxo.10" />
+    <EmbeddedResource Include="Resources\DeferredPointLight.gles.fxo.11" />
     <EmbeddedResource Include="Resources\DeferredSpotLight.gles.fxo.10" />
+    <EmbeddedResource Include="Resources\DeferredSpotLight.gles.fxo.11" />
     <EmbeddedResource Include="Resources\DeferredBasicEffect.ogl.fxo.10" />
+    <EmbeddedResource Include="Resources\DeferredBasicEffect.ogl.fxo.11" />
     <EmbeddedResource Include="Resources\DeferredClearGBuffer.ogl.fxo.10" />
+    <EmbeddedResource Include="Resources\DeferredClearGBuffer.ogl.fxo.11" />
     <EmbeddedResource Include="Resources\DeferredCombine.ogl.fxo.10" />
+    <EmbeddedResource Include="Resources\DeferredCombine.ogl.fxo.11" />
     <EmbeddedResource Include="Resources\DeferredPointLight.ogl.fxo.10" />
+    <EmbeddedResource Include="Resources\DeferredPointLight.ogl.fxo.11" />
     <EmbeddedResource Include="Resources\DeferredSpotLight.ogl.fxo.10" />
+    <EmbeddedResource Include="Resources\DeferredSpotLight.ogl.fxo.11" />
   </ItemGroup>
 
   <ItemGroup>
